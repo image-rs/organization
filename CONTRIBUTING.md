@@ -73,6 +73,26 @@ library, possible future directions or design goals. These will be considered
 when progress reports (every ~3 months) or update project focus (every ~1
 year).
 
+## A note about code formatting and `rustfmt`
+
+Consistent formatting can make code more legible and reduces contribution
+overhead. Unfortunately, the `rustfmt` tool does not always perform
+particularly well in this regard, especially for large projects. Therefore, it
+can sometimes even be a roadblock as small changes may affect disproportionate
+amounts of code which then leads to discussions on syntax that it was supposed
+to help avoid. [You can read more in-depth opinions in the internals thread][fmt-internals].
+
+So what's the policy? When a project is small enough or recent then we'll try
+to use `fmt` and add it to CI. But for the large, main `image` project it is
+not really a good fit—introducing it would format a seventh of all code and
+definitely requires manual review [1][fmt-image]. This may of course change in
+the future. If it becomes possible to use it with less aggressive settings,
+e.g. to only format and order imports, we'll revise this section and try to
+agree on a common configuration file.
+
+[fmt-internals]: https://internals.rust-lang.org/t/forced-rustfmt-is-a-roadblock-to-contributing/11913
+[fmt-image]: https://github.com/image-rs/image/pull/1162
+
 ## Getting started with coding
 
 Here is how you get started (using the `image` repository as an example):
