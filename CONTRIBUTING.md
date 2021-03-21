@@ -98,7 +98,7 @@ agree on a common configuration file.
 Here is how you get started (using the `image` repository as an example):
 
 1. [Fork](https://github.com/image-rs/image/fork) the respective repository.
-2. Clone your repository to the local hard drive ([GitHub for Mac](https://mac.github.com/), [Github for Window](https://windows.github.com/)).
+2. Clone your repository to the local hard drive ([GitHub for Mac](https://mac.github.com/), [Github for Windows](https://windows.github.com/)).
 3. Open up the Terminal and navigate to the project directory.
 4. If you have not installed Rust yet, download it [here](https://rustup.rs/).
 5. Type `cargo build` to build the library.
